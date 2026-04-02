@@ -1,4 +1,7 @@
-from snapshot import get_snapshot
+from core.snapshot import get_snapshot
+from core.analyzer import analyze
 
-data = get_snapshot()
-print(data)
+snap = get_snapshot()
+result = analyze(snap)
+
+print(result)
